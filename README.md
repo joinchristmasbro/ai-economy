@@ -1,6 +1,6 @@
-# aifirst-os
+# AI-First OS
 
-> O ambiente técnico onde você constrói o sistema operacional do seu negócio na Nova Economia da IA.
+> **AI-First OS** — o ambiente técnico onde você constrói o sistema operacional do seu negócio na Nova Economia da IA.
 > Configure pela web, instale com 1 prompt, opere.
 
 Esse repositório configura seu Claude Code com 28 skills calibradas em frameworks comprovados de criação de oferta, estudo de mercado, knowledge management e implantação de sistema em clientes. Workspace dedicado a **um nicho específico** — você se torna especialista nele.
