@@ -1,0 +1,31 @@
+# Dados sensíveis
+.env
+.env.local
+.env.*.local
+*.key
+credentials.json
+secrets/
+
+# Drop zone (não comitar dados de cliente)
+dados/*
+!dados/README.md
+
+# Temporários
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*~
+
+# Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Claude Code local
+.claude/local/

@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "comment": "Esse arquivo é populado pelo /setup baseado na stack que você declarou. WebSearch/WebFetch já vêm nativos no Claude Code. MCPs reais instalados e TESTADOS pelo /setup: firecrawl, youtube-data, youtube-transcript. Status de cada um em _contexto/mcps-instalados.md."
+  }
+}

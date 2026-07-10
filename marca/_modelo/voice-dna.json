@@ -1,0 +1,114 @@
+{
+  "$schema": "voice-dna-v1",
+  "_comment": "Machine-readable voice DNA. Skills consomem este JSON antes de gerar copy. Substitua placeholders pelos valores reais derivados do voice-guide.md + textos reais da marca.",
+
+  "brand": "[Nome da marca]",
+  "last_refined": "2026-04-25",
+
+  "archetype": "[1 dos 12: sage/hero/outlaw/magician/lover/caregiver/ruler/creator/innocent/explorer/jester/everyman]",
+
+  "tone_dimensions": {
+    "_comment": "Escala 1-10 nas 4 dimensões NN/G",
+    "formal_casual": 5,
+    "serious_funny": 4,
+    "respectful_irreverent": 3,
+    "matter_of_fact_enthusiastic": 6
+  },
+
+  "tone_by_context": {
+    "marketing": "[como soa em LP, ads]",
+    "transactional_email": "[como soa em emails]",
+    "error_response": "[como soa quando algo deu errado]",
+    "onboarding": "[como soa pra novo cliente]",
+    "internal": "[como soa em comunicação interna]"
+  },
+
+  "signature_phrases": {
+    "_comment": "Frases recorrentes que o cliente USA",
+    "openings": [
+      "[abertura 1]",
+      "[abertura 2]",
+      "[abertura 3]"
+    ],
+    "closings": [
+      "[fechamento 1]",
+      "[fechamento 2]",
+      "[fechamento 3]"
+    ],
+    "transitions": [
+      "[transição típica entre ideias]"
+    ]
+  },
+
+  "power_words": [
+    "[palavra que aparece com frequência 1]",
+    "[palavra 2]",
+    "[palavra 3]"
+  ],
+
+  "never_say": {
+    "_comment": "Palavras/jargões que a marca NUNCA usa",
+    "words": [
+      "[palavra proibida 1]",
+      "[palavra proibida 2]"
+    ],
+    "phrases": [
+      "[frase proibida 1]"
+    ],
+    "rationale": "[porque essas estão na blacklist]"
+  },
+
+  "anti_tone": {
+    "_comment": "Tons que a marca evita",
+    "tones": [
+      "pedantic",
+      "salesy",
+      "cringe"
+    ]
+  },
+
+  "ai_blacklist": {
+    "_comment": "Palavras proibidas universalmente (cheiro de IA)",
+    "verbs": [
+      "leverage", "unlock", "empower", "harness", "utilize",
+      "streamline", "navigate", "delve", "foster", "embark"
+    ],
+    "adjectives": [
+      "seamless", "robust", "comprehensive", "innovative",
+      "pivotal", "multifaceted", "cutting-edge", "world-class",
+      "game-changing", "revolutionary", "transformative"
+    ],
+    "phrases": [
+      "Boost your",
+      "Unlock the power of",
+      "Take your X to the next level",
+      "In today's fast-paced world",
+      "It's important to note that",
+      "Navigate the landscape",
+      "Empower your team to"
+    ]
+  },
+
+  "writing_patterns": {
+    "_comment": "Como a marca constrói frases",
+    "avg_sentence_length_words": 14,
+    "preference": "short over long",
+    "active_voice_pct": 85,
+    "first_person_plural": false,
+    "uses_emoji": false,
+    "uses_em_dash": "moderately"
+  },
+
+  "sample_copy_approved": [
+    "[Texto 1 que a marca escreveu e gostou]",
+    "[Texto 2]",
+    "[Texto 3]"
+  ],
+
+  "sample_copy_rejected": [
+    {
+      "text": "[texto que pareceu IA-gerado]",
+      "why_rejected": "[razão]"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Watchlist de canais YouTube relevantes ao nicho
+# /youtube-intel monitor lê este arquivo e detecta novos vídeos com outlier ≥ 3
+# desde último check.
+#
+# Formato:
+#   - channel_id: UCxxx (ID do canal, não URL)
+#     name: Nome do canal
+#     niche_relevance: high | medium | low
+#     last_checked: ISO date (auto-atualizado)
+#     baseline_median_views: 0 (auto-atualizado por /youtube-intel channel-baseline)
+#     notes: "1 frase do que aprende com ele"
+
+channels: []
+# exemplo:
+# channels:
+#   - channel_id: UC_x5XG1OV2P6uZZ5FSM9Ttw
+#     name: Google Developers
+#     niche_relevance: medium
+#     last_checked: 2026-04-25
+#     baseline_median_views: 50000
+#     notes: "Atualizações técnicas Gemini que afetam sistema do cliente"

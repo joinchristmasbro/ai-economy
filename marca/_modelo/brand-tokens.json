@@ -1,0 +1,157 @@
+{
+  "$schema": "https://design-tokens.org/draft/2024-spec",
+  "_comment": "Template W3C design tokens — 3 camadas (primitive → semantic → component). Importável em Tailwind/CSS-in-JS. O bloco 'meta' é preenchido pelo /marca (dispatcher de arquétipo). Substitua placeholders pelos seus valores.",
+
+  "meta": {
+    "_comment": "Preenchido pelo /marca ANTES dos tokens. Governa a direção visual (CALIBRATION-CORE §25). Os tokens abaixo são DERIVADOS do market_design_archetype — não um default fixo.",
+    "market_design_archetype": "_ARCHETYPE_ (ex: 'Performance Operations / Command Center' | 'Clinical Premium / Trust & Precision' | 'Local Specialist / Reliability & Compliance' | 'AI Infrastructure / Revenue Intelligence' | ou derivado próprio)",
+    "rationale": "_POR QUE ESTE ARQUÉTIPO_ — 1 frase por sinal (mercado · ICP · tipo de confiança · ticket · sofisticação · regulação · categoria emocional)",
+    "trust_profile": "_QUE CONFIANÇA O COMPRADOR PRECISA SENTIR_ (ex: precisão clínica / controle operacional / confiabilidade local / inteligência de sistema)",
+    "category_cues": ["_CUES VISUAIS DA CATEGORIA_ (ex: cards de dados, grids operacionais, linhas de fluxo, badges de prova)"],
+    "visual_personality": ["_3-5 ADJETIVOS_ (ex: operacional, preciso, premium-acessível, controlado)"],
+    "anti_references": ["_O QUE NÃO PODE PARECER_ (ex: academia clichê, SaaS genérico, clínica hospitalar, agência de tráfego)"],
+    "provisional_status": "_STATUS_ (defined = identidade real capturada | provisional-v1 = gerado pelo OS, NÃO é a identidade final)",
+    "source_context": "_DE ONDE VEIO_ (ex: 'declarado pelo operador' | 'derivado do nicho X + oferta Y')",
+    "confidence": "_GOLD/SILVER/BRONZE_"
+  },
+
+  "primitive": {
+    "color": {
+      "_comment": "OKLCH preferido. Variar L mantendo C/H pra paleta consistente.",
+      "brand": {
+        "_comment": "Paleta principal da marca. H = hue da brand color (0-360).",
+        "50":  "oklch(0.97 0.02 _HUE_)",
+        "100": "oklch(0.93 0.05 _HUE_)",
+        "300": "oklch(0.78 0.13 _HUE_)",
+        "500": "oklch(0.62 0.18 _HUE_)",
+        "700": "oklch(0.46 0.16 _HUE_)",
+        "900": "oklch(0.28 0.10 _HUE_)"
+      },
+      "neutral": {
+        "_comment": "Grays — H consistente (250 = neutro, 280 = preto azulado tipo Linear).",
+        "0":    "oklch(1 0 0)",
+        "50":   "oklch(0.98 0.005 250)",
+        "100":  "oklch(0.94 0.01 250)",
+        "300":  "oklch(0.80 0.01 250)",
+        "500":  "oklch(0.55 0.01 250)",
+        "700":  "oklch(0.35 0.01 250)",
+        "900":  "oklch(0.15 0.005 250)",
+        "1000": "oklch(0.08 0.01 280)"
+      },
+      "semantic": {
+        "success": "oklch(0.70 0.16 145)",
+        "warning": "oklch(0.78 0.14 75)",
+        "error":   "oklch(0.62 0.20 25)",
+        "info":    "oklch(0.65 0.15 230)"
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "display": "Inter Variable, Geist, system-ui, sans-serif",
+        "body":    "Inter Variable, system-ui, sans-serif",
+        "mono":    "JetBrains Mono Variable, monospace"
+      },
+      "fontWeight": {
+        "regular":  400,
+        "medium":   500,
+        "semibold": 600,
+        "bold":     700
+      },
+      "fontSize": {
+        "_comment": "Fluid clamp() — escala responsiva sem media queries.",
+        "xs":   "clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem)",
+        "sm":   "clamp(0.875rem, 0.82rem + 0.25vw, 1rem)",
+        "base": "clamp(1rem, 0.94rem + 0.3vw, 1.125rem)",
+        "lg":   "clamp(1.125rem, 1.05rem + 0.4vw, 1.25rem)",
+        "xl":   "clamp(1.25rem, 1.13rem + 0.6vw, 1.5rem)",
+        "2xl":  "clamp(1.5rem, 1.32rem + 0.9vw, 1.875rem)",
+        "3xl":  "clamp(1.875rem, 1.6rem + 1.4vw, 2.5rem)",
+        "4xl":  "clamp(2.5rem, 2rem + 2.5vw, 3.75rem)",
+        "5xl":  "clamp(3rem, 2.4rem + 3vw, 4.5rem)",
+        "hero": "clamp(3.5rem, 2.5rem + 5vw, 6rem)"
+      },
+      "letterSpacing": {
+        "tight":   "-0.02em",
+        "tighter": "-0.04em",
+        "normal":  "0",
+        "wide":    "0.05em"
+      },
+      "lineHeight": {
+        "tight":   1.1,
+        "snug":    1.25,
+        "normal":  1.5,
+        "relaxed": 1.65,
+        "loose":   1.85
+      }
+    },
+    "spacing": {
+      "_comment": "Base 4px. Section padding usa fluid clamp().",
+      "0":  "0",
+      "1":  "0.25rem",
+      "2":  "0.5rem",
+      "3":  "0.75rem",
+      "4":  "1rem",
+      "6":  "1.5rem",
+      "8":  "2rem",
+      "12": "3rem",
+      "16": "4rem",
+      "24": "6rem",
+      "32": "8rem",
+      "section": "clamp(4rem, 10vw, 10rem)"
+    },
+    "radius": {
+      "none": "0",
+      "sm":   "0.25rem",
+      "md":   "0.5rem",
+      "lg":   "0.75rem",
+      "xl":   "1rem",
+      "2xl":  "1.5rem",
+      "full": "9999px"
+    },
+    "shadow": {
+      "sm":  "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      "md":  "0 4px 6px -1px rgb(0 0 0 / 0.1)",
+      "lg":  "0 10px 15px -3px rgb(0 0 0 / 0.1)",
+      "xl":  "0 20px 25px -5px rgb(0 0 0 / 0.1)",
+      "2xl": "0 25px 50px -12px rgb(0 0 0 / 0.25)"
+    },
+    "motion": {
+      "duration": {
+        "fast":   "150ms",
+        "normal": "250ms",
+        "slow":   "450ms",
+        "slower": "700ms",
+        "hero":   "1200ms"
+      },
+      "easing": {
+        "out-expo":     "cubic-bezier(0.16, 1, 0.3, 1)",
+        "out-quart":    "cubic-bezier(0.25, 1, 0.5, 1)",
+        "in-out-quart": "cubic-bezier(0.76, 0, 0.24, 1)"
+      }
+    }
+  },
+
+  "semantic": {
+    "color": {
+      "background": {
+        "primary":   "{primitive.color.neutral.0}",
+        "secondary": "{primitive.color.neutral.50}",
+        "elevated":  "{primitive.color.neutral.100}",
+        "inverse":   "{primitive.color.neutral.1000}"
+      },
+      "text": {
+        "primary":   "{primitive.color.neutral.900}",
+        "secondary": "{primitive.color.neutral.700}",
+        "tertiary":  "{primitive.color.neutral.500}",
+        "inverse":   "{primitive.color.neutral.0}",
+        "brand":     "{primitive.color.brand.500}"
+      },
+      "border": {
+        "subtle":  "{primitive.color.neutral.100}",
+        "default": "{primitive.color.neutral.300}",
+        "strong":  "{primitive.color.neutral.500}",
+        "brand":   "{primitive.color.brand.500}"
+      }
+    }
+  }
+}
